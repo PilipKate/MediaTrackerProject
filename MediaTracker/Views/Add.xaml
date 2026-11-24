@@ -1,0 +1,192 @@
+﻿<UserControl x:Class="MediaTracker.Views.Add"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MediaTracker.Views"
+             mc:Ignorable="d" d:DesignWidth="800" Height="528">
+    <UserControl.Resources>
+        <Style x:Key="PlaceholderTextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="True">
+                            <Grid>
+                                <ScrollViewer x:Name="PART_ContentHost" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Margin="2,0"/>
+
+                                <TextBlock x:Name="PlaceholderText"
+                                       Text="{TemplateBinding Tag}"
+                                       Foreground="Gray"
+                                       Margin="5,0,0,0"
+                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                       IsHitTestVisible="False"
+                                       Visibility="Collapsed"/>
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="PlaceholderText" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter TargetName="PlaceholderText" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="MenuButton" TargetType="Button">
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="30"/>
+
+            <Setter Property="Foreground" Value="#4F4A45"/>
+            <Setter Property="Padding" Value="5, 0, 5, 0"/>
+
+            <Setter Property="Background" Value="Transparent"/>
+
+            <Setter Property="BorderThickness" Value="0"/>
+
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="ButtonBorder"
+                Background="{TemplateBinding Background}"
+                CornerRadius="3"
+                Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter
+                VerticalAlignment="Center"
+                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                        Property="Background"
+                        Value="#FF6C5F5B"/>
+
+                                <Setter Property="Foreground"
+                        Value="#DAC3B3"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed"
+                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                        Property="Background"
+                        Value="#DAC3B3"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="#FF4F4A45" Margin="10,0,0,0">
+        <TextBlock HorizontalAlignment="Left" Margin="10,25,0,0" TextWrapping="Wrap" Text="Добавить произведение" VerticalAlignment="Top" FontSize="35" Height="49" Width="463" Foreground="#FFDAC3B3" FontFamily="Cascadia Code"/>
+
+        <Grid HorizontalAlignment="Left" Height="305" Margin="29,108,0,0" VerticalAlignment="Top" Width="262" Background="#FF4F4A45">
+            <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#FFDAC3B3" Margin="-14,0,0,-95">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="193*"/>
+                        <RowDefinition Height="195*"/>
+                    </Grid.RowDefinitions>
+                    <Button x:Name ="Add_Button" Style="{StaticResource MenuButton}" Content="Добавить фильм" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="200" Click="Add_Button_Click"  Background="#FFDAC3B3" FontFamily="Cascadia Code" FontSize="20" BorderThickness="0,0,0,0" Margin="0,143,0,0" Grid.Row="1"/>
+                    <TextBox x:Name="TitleFilm" Style="{StaticResource PlaceholderTextBox}" Tag="Название:" Margin="33,61,25,96" Background="#FFDAC3B3" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" />
+
+                    <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Фильм" VerticalAlignment="Top" Foreground="#FF4F4A45" FontFamily="Cascadia Code" FontSize="40"/>
+                    <TextBox x:Name="DurationFilm" Style="{StaticResource PlaceholderTextBox}" Tag="Длительность:" Margin="33,39,24,120" Background="#FFDAC3B3" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" Grid.Row="1" />
+                    <TextBox x:Name="PosterFilm" Style="{StaticResource PlaceholderTextBox}" Tag="Постер: /images/" Margin="33,79,24,80" Background="#FFDAC3B3" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" Grid.Row="1" />
+
+                    <ComboBox x:Name="GanreList" Margin="38,127,39,0" Foreground="#FF4F4A45" FontFamily="Cascadia Code" BorderBrush="#FFDAC3B3" ItemsSource="{Binding Ganres}" SelectedItem="{Binding SelectedGanreFilm, Mode=TwoWay}" DisplayMemberPath="Name" VerticalAlignment="Top" Height="30">
+                        <ComboBox.ItemContainerStyle>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="#4F4A45"/>
+                                <Setter Property="Foreground" Value="#DAC3B3"/>
+                                <Setter Property="Padding" Value="8,5"/>
+                            </Style>
+                        </ComboBox.ItemContainerStyle>
+                    </ComboBox>
+
+
+                    <ComboBox x:Name="StatusList" Margin="38,194,38,0" Foreground="#FF4F4A45" Text="Статус" FontFamily="Cascadia Code" BorderBrush="#FFDAC3B3" ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatusFilm, Mode=TwoWay}" DisplayMemberPath="Name" VerticalAlignment="Top" Height="30" Grid.RowSpan="2">
+                        <ComboBox.ItemContainerStyle>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="#4F4A45"/>
+                                <Setter Property="Foreground" Value="#DAC3B3"/>
+                                <Setter Property="Padding" Value="8,5"/>
+                            </Style>
+                        </ComboBox.ItemContainerStyle>
+                    </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="39,99,0,0" TextWrapping="Wrap" Text="Жанр:" VerticalAlignment="Top" Foreground="#FF4F4A45" FontFamily="Cascadia Code" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="38,166,0,0" TextWrapping="Wrap" Text="Статус:" VerticalAlignment="Top" Foreground="#FF4F4A45" FontFamily="Cascadia Code" FontSize="20"/>
+
+                </Grid>
+
+            </Border>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="305" Margin="330,108,0,0" VerticalAlignment="Top" Width="262" Background="#FF4F4A45">
+            <Border BorderBrush="Black" BorderThickness="0" CornerRadius="10,10,10,10" Background="#FFCDAB81" Margin="0,0,-8,-93">
+                <Grid>
+                    <Button x:Name ="Add_Serial_Button" Style="{StaticResource MenuButton}" Content="Добавить Сериал" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="194" Click="Add_Serial_Button_Click"  Background="#FFCDAB81" FontFamily="Cascadia Code" FontSize="20" BorderThickness="0,0,0,0" Margin="32,341,0,0"/>
+
+
+                    <TextBox x:Name="TitleSerial" Style="{StaticResource PlaceholderTextBox}" Tag="Название:" Margin="28,61,42,297" Background="#FFCDAB81" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" />
+                    <TextBox x:Name="SeasonNumber" Style="{StaticResource PlaceholderTextBox}" Tag="Количество сезонов:" Margin="28,236,10,122" Background="#FFCDAB81" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" />
+                    <TextBox x:Name="SeriesNumber" Style="{StaticResource PlaceholderTextBox}" Tag="Серий в сезоне:" Margin="28,276,24,87" Background="#FFCDAB81" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" />
+                    <TextBox x:Name="PosterSerial" Style="{StaticResource PlaceholderTextBox}" Tag="Постер: /images/" Margin="28,316,20,57" Background="#FFCDAB81" FontSize="20" FontFamily="Cascadia Code" Foreground="#FF4F4A45" BorderThickness="0,0,0,0" />
+
+                    <TextBlock HorizontalAlignment="Left" Margin="67,10,0,0" TextWrapping="Wrap" Text="Сериал" VerticalAlignment="Top" Foreground="#FF4F4A45" FontFamily="Cascadia Code" FontSize="40"/>
+
+                    <ComboBox x:Name="GanreSerialList" Margin="30,120,48,0" Foreground="#FF4F4A45" Text="Статус" FontFamily="Cascadia Code" BorderBrush="#FFDAC3B3" ItemsSource="{Binding Ganres}" SelectedItem="{Binding SelectedGanreSerial, Mode=TwoWay}" DisplayMemberPath="Name" VerticalAlignment="Top" Height="30">
+                        <ComboBox.ItemContainerStyle>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="#4F4A45"/>
+                                <Setter Property="Foreground" Value="#DAC3B3"/>
+                                <Setter Property="Padding" Value="8,5"/>
+                            </Style>
+                        </ComboBox.ItemContainerStyle>
+                    </ComboBox>
+                    <ComboBox x:Name="StatusSerialList" Margin="34,192,46,0" Foreground="#FF4F4A45" Text="Статус" FontFamily="Cascadia Code" BorderBrush="#FFDAC3B3" ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatusSerial, Mode=TwoWay}" DisplayMemberPath="Name" VerticalAlignment="Top" Height="30">
+                        <ComboBox.ItemContainerStyle>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="#4F4A45"/>
+                                <Setter Property="Foreground" Value="#DAC3B3"/>
+                                <Setter Property="Padding" Value="8,5"/>
+                            </Style>
+                        </ComboBox.ItemContainerStyle>
+                    </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="34,92,0,0" TextWrapping="Wrap" Text="Жанр:" VerticalAlignment="Top" Foreground="#FF4F4A45" FontFamily="Cascadia Code" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="34,164,0,0" TextWrapping="Wrap" Text="Статус:" VerticalAlignment="Top" Foreground="#FF4F4A45" FontFamily="Cascadia Code" FontSize="20"/>
+
+                </Grid>
+
+            </Border>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

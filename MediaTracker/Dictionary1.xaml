@@ -1,0 +1,55 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models="clr-namespace:MediaTracker">
+    <DataTemplate x:Key="FilmCardTemplate" DataType="{x:Type models:Film}">
+
+        <Border Width="120" Margin="3" Padding="3" Background="#DAC3B3" CornerRadius="10">
+
+            <StackPanel>
+                <Image Source="{Binding Poster}" Height="150" Stretch="Fill" Margin="5,5,5,0"/>
+                <TextBlock Text="{Binding Title}" Foreground="#FF4F4A45" FontSize="10" FontWeight="Bold" Margin="3,3,0,2" TextWrapping="Wrap" FontFamily="Cascadia Code"/>
+                <TextBlock Text="{Binding Type}" Foreground="#6C5F5B" FontFamily="Cascadia Code" FontSize="8" Margin="3,2,0,0"/>
+                <TextBlock Text="{Binding Ganre}" Foreground="#6C5F5B" FontFamily="Cascadia Code" FontSize="8" Margin="3,2,0,0"/>
+
+                <TextBlock Text="{Binding Duration}" Foreground="#6C5F5B" FontFamily="Cascadia Code" FontSize="8" Margin="3,2,0,0"/>
+                <StackPanel Orientation="Horizontal" Margin="3,2,0,0">
+                    <TextBlock Text="Оценка: " Foreground="#6C5F5B" FontSize="8"/>
+
+                    <TextBlock Text="{Binding Rate,  TargetNullValue=Нет оценки}" Foreground="#6C5F5B" FontSize="8"/>
+                </StackPanel>
+                <TextBlock Text="{Binding Status}"
+                                   Foreground="#6C5F5B"
+                                   Margin="3,2,0,4" FontSize="8" FontFamily="Cascadia Code"/>
+
+            </StackPanel>
+
+        </Border>
+    </DataTemplate>
+    <DataTemplate x:Key="SerialCardTemplate" DataType="{x:Type models:Serial}">
+
+        <Border Width="120" Margin="3" Padding="3" Background="#CDAB81" CornerRadius="10">
+
+            <StackPanel>
+                <Image Source="{Binding Poster}" Height="150" Stretch="Fill" Margin="5,5,5,0"/>
+                <TextBlock Text="{Binding Title}" Foreground="#FF4F4A45" FontSize="10" FontWeight="Bold" Margin="3,3,0,2" TextWrapping="Wrap" FontFamily="Cascadia Code"/>
+                <TextBlock Text="{Binding Type}" Foreground="#6C5F5B" FontFamily="Cascadia Code" FontSize="8" Margin="3,2,0,0"/>
+                <TextBlock Text="{Binding Ganre}" Foreground="#6C5F5B" FontFamily="Cascadia Code" FontSize="8" Margin="3,2,0,0"/>
+                <StackPanel Orientation="Horizontal" Margin="3,2,0,0">
+                    <TextBlock Text="Сезонов: " Foreground="#6C5F5B" FontSize="8"/>
+
+                    <TextBlock Text="{Binding SeasonNumber}" Foreground="#6C5F5B" FontSize="8"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="3,2,0,0">
+                    <TextBlock Text="Оценка: " Foreground="#6C5F5B" FontSize="8"/>
+
+                    <TextBlock Text="{Binding Rate,  TargetNullValue=Нет оценки}" Foreground="#6C5F5B" FontSize="8"/>
+                </StackPanel>
+                <TextBlock Text="{Binding Status}"
+                           Foreground="#6C5F5B"
+                           Margin="3,2,0,4" FontSize="8" FontFamily="Cascadia Code"/>
+
+            </StackPanel>
+
+        </Border>
+    </DataTemplate>
+</ResourceDictionary>
