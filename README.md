@@ -26,55 +26,55 @@ MediaTracker - это десктопное приложение для учёт�
 
 Проект разработан с использованием следующих технологий:
 
-C# — основной язык программирования.
-.NET 10 — платформа разработки.
-WPF (Windows Presentation Foundation) — создание графического интерфейса.
-XAML — описание интерфейса приложения.
-PostgreSQL — хранение данных.
-Entity Framework Core 10 — взаимодействие с базой данных через ORM.
-Npgsql — подключение PostgreSQL к Entity Framework Core.
-NUnit — модульное тестирование.
-Moq — создание mock-объектов при тестировании.
+C# - основной язык программирования.
+.NET 10 - платформа разработки.
+WPF (Windows Presentation Foundation) - создание графического интерфейса.
+XAML - описание интерфейса приложения.
+PostgreSQL - хранение данных.
+Entity Framework Core 10 - взаимодействие с базой данных через ORM.
+Npgsql - подключение PostgreSQL к Entity Framework Core.
+NUnit - модульное тестирование.
+Moq - создание mock-объектов при тестировании.
 
 
 Паттерны проектирования, применяющиеся в проекте:
 
 1. Factory method
-  ICardFactory — интерфейс фабрики карточек.
-  CardPrintFactory — определяет тип произведения и создаёт соответствующую карточку.
-  FilmCardPrint — получение шаблона карточки фильма.
-  SerialCardPrint — получение шаблона карточки сериала.
+  ICardFactory - интерфейс фабрики карточек.
+  CardPrintFactory - определяет тип произведения и создаёт соответствующую карточку.
+  FilmCardPrint - получение шаблона карточки фильма.
+  SerialCardPrint - получение шаблона карточки сериала.
   Метод CreatePrinter() проверяет тип объекта и выбирает подходящую реализацию ICardPrint.
 
 3. Factory method
-  WorkFactory — абстрактная фабрика с методом CreateWork().
-  FilmFactory — создание объектов Film.
-  SerialFactory — создание объектов Serial.
+  WorkFactory - абстрактная фабрика с методом CreateWork().
+  FilmFactory - создание объектов Film.
+  SerialFactory - создание объектов Serial.
 
 4. Singleton
-  WorkCollection — класс, реализующий паттерн Singleton.
-  Instance — статическое свойство для получения экземпляра.
+  WorkCollection - класс, реализующий паттерн Singleton.
+  Instance - статическое свойство для получения экземпляра.
   Приватный конструктор предотвращает создание дополнительных экземпляров извне.
   Класс предоставляет единый объект для получения коллекции произведений из базы данных.
 
 5. Strategy
-  IRecStrategy — общий интерфейс стратегии.
-  FilmsRecStrategy — фильтрация фильмов.
-  SerialsRecStrategy — фильтрация сериалов.
-  BestRecStrategy — выбор произведений с рейтингом выше 8.
-  YouRecStrategy — фильтрация по выбранному типу и жанру.
+  IRecStrategy - общий интерфейс стратегии.
+  FilmsRecStrategy - фильтрация фильмов.
+  SerialsRecStrategy - фильтрация сериалов.
+  BestRecStrategy - выбор произведений с рейтингом выше 8.
+  YouRecStrategy - фильтрация по выбранному типу и жанру.
   Класс ReccomendViewModel принимает стратегию через метод GetWorks(), благодаря чему алгоритм фильтрации можно менять независимо от логики отображения результатов.
 
 6. Iterator
-  Iterator<T> — интерфейс итератора.
-  ItemsIterator<T> — реализация итератора для списка.
+  Iterator<T> - интерфейс итератора.
+  ItemsIterator<T> - реализация итератора для списка.
   Итератор применяется при фильтрации произведений и формировании списка рекомендаций.
 
 7. Bridge
-  WorkCard — абстракция, представляющая карточку произведения.
-  ICardPrint — интерфейс реализации, определяющий способ получения шаблона карточки.
-  FilmCardPrint — реализация шаблона карточки фильма.
-  SerialCardPrint — реализация шаблона карточки сериала.
+  WorkCard - абстракция, представляющая карточку произведения.
+  ICardPrint - интерфейс реализации, определяющий способ получения шаблона карточки.
+  FilmCardPrint - реализация шаблона карточки фильма.
+  SerialCardPrint - реализация шаблона карточки сериала.
 
 В основе модели данных находится базовый класс Work, от которого наследуются классы Film и Serial. Для хранения данных используется стратегия TPT (Table Per Type) в Entity Framework Core, что позволяет хранить общие характеристики произведений в таблице works, а специфические характеристики фильмов и сериалов — в отдельных таблицах films и serials.
 
@@ -85,39 +85,6 @@ Moq — создание mock-объектов при тестировании.
 2. Клонирование репозитория git clone https://github.com/PilipKate/MediaTracker.git
 3. В файле Database.cs находится строка подключения, измените параметры подключения в соответствии с настройками своего PostgreSQL.
 4. Для запуска приложения откройте приложение MediaTracker в папке \MediaTracker\bin\Debug\net10.0-windows или откройте решение MediaTracker.slnx в Visual Studio и запустите проект.
-
-Структура проекта:
-
-MediaTracker/
-│
-├── App.xaml
-├── App.xaml.cs
-│
-├── Main.cs
-├── Database.cs
-├── MainWindow.xaml
-├── MainWindow.xaml.cs
-│
-├── Views/
-│   ├── Home.xaml
-│   ├── Home.xaml.cs
-│   ├── Catalog.xaml
-│   ├── Catalog.xaml.cs
-│   ├── Add.xaml
-│   ├── Add.xaml.cs
-│   ├── Delete.xaml
-│   ├── Delete.xaml.cs
-│   ├── Raiting.xaml
-│   ├── Raiting.xaml.cs
-│   ├── Recommendations.xaml
-│   └── Recommendations.xaml.cs
-│
-├── images/
-│
-├── Tests.cs
-│
-├── MediaTracker.csproj
-└── MediaTracker.slnx
 
 Интерфейс приложения:
 <img width="2027" height="1193" alt="image" src="https://github.com/user-attachments/assets/672a79e0-eb41-4422-a57f-92a162d3bb38" />
