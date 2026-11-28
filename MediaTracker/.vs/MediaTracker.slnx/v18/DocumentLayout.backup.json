@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\",
+  "WorkspaceRootPath": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:mediatracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\views\\raiting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:views\\raiting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\views\\delete.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:views\\delete.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\views\\catalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:views\\catalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\views\\add.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:views\\add.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\views\\recommendations.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:views\\recommendations.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|c:\\users\\\u0435\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\mediatracker\\mediatracker\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E22B0E3-21AF-EACE-861F-2AF80E0C1C3C}|MediaTracker.csproj|solutionrelative:tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +42,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Raiting.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Raiting.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Raiting.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Raiting.xaml.cs",
+              "RelativeToolTip": "Views\\Raiting.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwFAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-28T18:32:59.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Delete.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Delete.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Delete.xaml.cs",
+              "RelativeToolTip": "Views\\Delete.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-28T18:32:39.594Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -26,16 +80,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MediaTracker.csproj",
-              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker.csproj",
-              "RelativeDocumentMoniker": "MediaTracker.csproj",
-              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker.csproj",
-              "RelativeToolTip": "MediaTracker.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-22T00:00:59.395Z",
+              "DocumentIndex": 4,
+              "Title": "Add.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Add.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Add.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Add.xaml.cs",
+              "RelativeToolTip": "Views\\Add.xaml.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAwAgBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-28T18:31:33.9Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAcwO4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T18:53:45.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tests.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Tests.cs",
+              "RelativeDocumentMoniker": "Tests.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Tests.cs",
+              "RelativeToolTip": "Tests.cs",
+              "ViewState": "AgIAABUBAAAAAAAAAAAAACoBAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T15:49:21.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Recommendations.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Recommendations.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Recommendations.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Recommendations.xaml.cs",
+              "RelativeToolTip": "Views\\Recommendations.xaml.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwHEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T13:32:36.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Catalog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Catalog.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Catalog.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Views\\Catalog.xaml.cs",
+              "RelativeToolTip": "Views\\Catalog.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowC4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T13:31:54.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Database.cs",
+              "RelativeDocumentMoniker": "Database.cs",
+              "ToolTip": "C:\\Users\\\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0430\\source\\repos\\MediaTracker\\MediaTracker\\Database.cs",
+              "RelativeToolTip": "Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T13:29:19.118Z"
             }
           ]
         }

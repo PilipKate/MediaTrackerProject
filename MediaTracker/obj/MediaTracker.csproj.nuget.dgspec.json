@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker.csproj": {}
+    "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker\\MediaTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker.csproj": {
+    "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker\\MediaTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker\\MediaTracker.csproj",
         "projectName": "MediaTracker",
-        "projectPath": "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker.csproj",
+        "projectPath": "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker\\MediaTracker.csproj",
         "packagesPath": "C:\\Users\\Екатерина\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\obj\\",
+        "outputPath": "C:\\Users\\Екатерина\\source\\repos\\MediaTracker\\MediaTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

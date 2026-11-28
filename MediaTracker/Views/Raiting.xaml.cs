@@ -37,6 +37,7 @@ namespace MediaTracker.Views
                 return;
             }
             using var context = new AppDbContext();
+            context.Database.EnsureCreated();
             var RateUpdate = context.works.FirstOrDefault(w => w.Title == titleToRate);
             if (RateUpdate != null)
             {
@@ -77,6 +78,7 @@ namespace MediaTracker.Views
                 return;
             }
             using var context = new AppDbContext();
+            context.Database.EnsureCreated();
             var StatusUpdate = context.works.FirstOrDefault(w => w.Title == title);
             if (StatusUpdate != null)
             {

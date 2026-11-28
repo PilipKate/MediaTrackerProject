@@ -237,6 +237,7 @@ namespace MediaTracker
         {
             using (var context = new AppDbContext())
             {
+                context.Database.EnsureCreated();
                 return context.Set<Work>().OrderBy(W => W.id).ToList();
             }
         }

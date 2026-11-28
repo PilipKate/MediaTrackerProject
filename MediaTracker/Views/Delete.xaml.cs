@@ -30,6 +30,7 @@ namespace MediaTracker.Views
                 return;
             }
             using var context = new AppDbContext();
+            context.Database.EnsureCreated();
             var WorkDelete = context.works.FirstOrDefault(w => w.Title == titleToDelete);
             if (WorkDelete != null)
             {
