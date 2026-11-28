@@ -42,8 +42,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -67,16 +75,7 @@
               "RelativeToolTip": "Views\\Delete.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-28T18:32:39.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "WhenOpened": "2026-11-28T18:32:39.594Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Views\\Add.xaml.cs",
               "ViewState": "AgIAAOMAAAAAAAAAAAAAwAgBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-28T18:31:33.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-28T18:31:33.9Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAANAAAAAAAAAAAAAcwO4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-24T18:53:45.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-24T18:53:45.82Z"
             },
             {
               "$type": "Document",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "Views\\Catalog.xaml.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowC4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T13:31:54.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-26T13:31:54.433Z"
             },
             {
               "$type": "Document",
